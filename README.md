@@ -14,9 +14,14 @@ Edit the code in the configuration section. You must specify the IP address of t
 <br><br>
 Enables sending data packets from LoRa Meshcom via IP network:<br>
 <img src="https://github.com/ik5xmk/mc2mt_net/blob/main/enable_extudp.jpg" />
-<br><br>
-Write to Meshtastic node with "!nnnnnnnn" sintax:<br>
+<br>
+Write to Meshtastic node with "!nnnnnnnn" sintax from a Meshcom node (e.g. IK5XMK-12 to the bridge IK5XMK-99):<br>
 <img src="https://github.com/ik5xmk/mc2mt_net/blob/main/direct_message_to_node.jpg" />
-<br><br>
-A message sent from the Meshcom network to the bridge and starting with ! (e.g. !a45c0af2 hello) will be forwarded to the indicated Meshtastic node, if it does not start with ! the message will be sent to the channel (as configured inside the code -- and in the LoRa Meshtastic card that we use in output --).<br>
+<br>
+Got it on the bridge:<br>
+<img src="https://github.com/ik5xmk/mc2mt_net/blob/main/msg_arrived_on_bridge.jpg" />
+<br>
+A message sent from the Meshcom network to the bridge and starting with ! (e.g. !a45c0af2 hello) will be forwarded to the indicated Meshtastic node, if it does not start with ! the message will be sent to the channel (as configured inside the code -- and in the LoRa Meshtastic card that we use in output --).
+<br>
+<img src="https://github.com/ik5xmk/mc2mt_net/blob/main/msg_arrived_on_meshtastic_card.jpg" />
 <br>
