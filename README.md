@@ -12,7 +12,8 @@ How it works:<br>
 <br>
 Edit the code in the configuration section. You must specify the IP address of the Meshcom LoRa system on which to listen for incoming messages (the standard port is 1799/UDP). Enter the callsign of the node we will use as our bridge (incoming node): messages addressed to this Meshcom node will be forwarded to the Meshtastic network. Specify the IP address of the Meshtastic node we will use as the "outgoing" node (the standard port is 4403/TCP). If we operate outside the LAN, it will be necessary to intervene on the NAT configurations of the routers where the LoRa cards work. If you intend to broadcast messages, make sure the correct channel is specified. Avoid broadcasting and creating unnecessary traffic on shared and primary channels; it's best to create a dedicated channel. Nothing else needs to be changed in the code. In the Meshcom/bridge node, enable extudp and specify the IP address of the computer where the bridge software is running.
 <br><br>
-![Enables sending data packets from LoRa Meshcom via IP network](https://github.com/ik5xmk/mc2mt_net/blob/main/enable_extudp.jpg)<br>
+Enables sending data packets from LoRa Meshcom via IP network<br>
+![](https://github.com/ik5xmk/mc2mt_net/blob/main/enable_extudp.jpg)<br>
 <br>
 A message sent from the Meshcom network to the bridge and starting with ! (e.g. !a45c0af2 hello) will be forwarded to the indicated Meshtastic node, if it does not start with ! the message will be sent to the channel (as configured inside the code -- and in the LoRa Meshtastic card that we use in output --).<br>
 <br>
