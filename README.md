@@ -14,7 +14,6 @@ Edit the code in the configuration section. You must specify the IP address of t
 <br><br>
 Enables sending data packets from LoRa Meshcom via IP network:<br>
 <img src="https://github.com/ik5xmk/mc2mt_net/blob/main/enable_extudp.jpg" />
-<br>
 Write to Meshtastic node with "!nnnnnnnn" sintax from a Meshcom node (e.g. IK5XMK-12 to the bridge IK5XMK-99):<br>
 <img src="https://github.com/ik5xmk/mc2mt_net/blob/main/direct_message_to_node.jpg" />
 <br>
