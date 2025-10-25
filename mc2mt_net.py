@@ -106,7 +106,8 @@ if __name__ == "__main__":
             continue
 
         msg = msg.strip()
-
+        # msg = src + ' ' + msg + ' -via mc2meshtastic gw' # mod by IZ0MJE
+        
         # Se inizia con "!" è un messaggio verso un nodo specifico
         if msg.startswith("!"):
             parts = msg.split(" ", 1)
@@ -115,4 +116,5 @@ if __name__ == "__main__":
             send_to_meshtastic(text, dest)
         else:
             # Broadcast
+
             send_to_meshtastic(msg, None)
