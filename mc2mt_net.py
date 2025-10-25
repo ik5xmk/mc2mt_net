@@ -105,8 +105,8 @@ if __name__ == "__main__":
             print(f"[SCARTO] Frame destinato a {dst}, non a {MESHCOM_BRIDGE_NODE}")
             continue
 
-        msg = msg.strip()
         # msg = src + ' ' + msg + ' -via mc2meshtastic gw' # mod by IZ0MJE
+        msg = msg.strip()
         
         # Se inizia con "!" è un messaggio verso un nodo specifico
         if msg.startswith("!"):
@@ -118,3 +118,4 @@ if __name__ == "__main__":
             # Broadcast
 
             send_to_meshtastic(msg, None)
+
